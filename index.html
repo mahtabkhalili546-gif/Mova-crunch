@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e50914">
+  <meta name="description" content="Mova Crunch — deliciously crunchy vegetable snacks. Explore our vegetable chips and bhindi chips.">
+  <title>Mova Crunch | Big Crunch. Bold Taste.</title>
+  <style>
+    :root{--red:#e50914;--deep:#a90009;--green:#65c900;--ink:#171717;--muted:#666;--cream:#fffaf3}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1140px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #eee}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:78px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--red);font-size:1.25rem}
+    .brand img{width:76px;height:58px;object-fit:contain}
+    nav{display:flex;gap:28px;align-items:center;font-weight:700;font-size:.93rem}
+    nav a:hover{color:var(--red)} .nav-cta,.btn{background:var(--red);color:#fff;padding:13px 20px;border-radius:999px;font-weight:800;display:inline-block;box-shadow:0 8px 20px #e509142b}
+    .hero{background:radial-gradient(circle at 80% 20%,#ffefb7 0,transparent 32%),linear-gradient(125deg,#fff8ee,#fff 55%,#ffe7e7);overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:35px;padding:68px 0 76px}
+    .eyebrow{display:inline-block;color:var(--deep);background:#ffe1df;border-radius:99px;padding:8px 13px;font-size:.78rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+    h1{font-size:clamp(2.8rem,6vw,5.5rem);line-height:.98;letter-spacing:-.055em;margin:18px 0}
+    h1 span{color:var(--red)} .hero p{font-size:1.13rem;line-height:1.7;color:#555;max-width:560px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:28px}.btn.alt{background:#171717;box-shadow:none}
+    .hero-logo{display:flex;justify-content:center;align-items:center;position:relative}
+    .hero-logo:before{content:"";position:absolute;width:min(440px,90%);aspect-ratio:1;border-radius:50%;background:#ffdf69;filter:blur(1px)}
+    .hero-logo img{position:relative;width:min(100%,550px);filter:drop-shadow(0 20px 22px #6e00002b)}
+    section{padding:76px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}
+    .section-head h2{font-size:clamp(2rem,4vw,3rem);margin:10px 0}.section-head p{color:var(--muted);line-height:1.7}
+    .products{background:var(--cream)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:#fff;border-radius:22px;padding:28px 24px;box-shadow:0 12px 35px #4a26000d;border:1px solid #f4eee5}
+    .product-art{height:150px;border-radius:18px;display:grid;place-items:center;font-size:4rem;background:linear-gradient(135deg,#fff1d0,#ffe0d9);margin-bottom:20px}
+    .card:nth-child(2) .product-art{background:linear-gradient(135deg,#e8ffd5,#fff3c9)}
+    .card:nth-child(3) .product-art{background:linear-gradient(135deg,#ffe1e1,#fff0d1)}
+    .card h3{font-size:1.3rem;margin:0 0 9px}.card p{color:var(--muted);line-height:1.6;margin:0}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}
+    .about-mark{background:linear-gradient(145deg,var(--red),#a90009);border-radius:28px;padding:34px;display:grid;place-items:center;min-height:310px}
+    .about-mark img{width:min(100%,360px);background:#fff;border-radius:18px;padding:10px}
+    .about-copy h2{font-size:clamp(2rem,4vw,3rem);margin:10px 0 16px}.about-copy p{color:var(--muted);line-height:1.8}
+    .values{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.values span{background:#f4f4f4;padding:10px 14px;border-radius:99px;font-weight:700;font-size:.88rem}
+    .banner{background:#171717;color:#fff;text-align:center;padding:66px 20px}.banner h2{font-size:clamp(2rem,4vw,3.2rem);margin:0 0 14px}.banner p{color:#ddd;line-height:1.7;margin:0 auto 25px;max-width:650px}
+    .contact{background:#fff8f1}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.contact-card{background:#fff;border:1px solid #f1e8df;border-radius:20px;padding:28px}
+    .contact-card h3{margin-top:0}.contact-card p{color:#555;line-height:1.8}.contact-card a{color:var(--deep);font-weight:800}
+    footer{background:#111;color:#fff;padding:28px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.foot small{color:#bbb}
+    @media(max-width:760px){.nav{min-height:68px}.brand img{width:60px;height:48px}nav{gap:12px;font-size:.8rem}nav a:not(.nav-cta){display:none}.nav-cta{padding:10px 14px}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-grid{padding:48px 0 55px;text-align:center}.hero p{margin-left:auto;margin-right:auto}.actions{justify-content:center}.hero-logo img{max-width:390px}.cards{grid-template-columns:1fr}.about-mark{min-height:240px}section{padding:58px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><img src="assets/mova-crunch-logo.png" alt="Mova Crunch logo"><span>MOVA CRUNCH</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="https://wa.me/919008108866?text=Hello%20Mova%20Crunch%2C%20I%20want%20to%20know%20about%20your%20products." target="_blank" rel="noopener">Enquire Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">The joy of every crunch</span>
+        <h1>Big Crunch.<br><span>Bold Taste.</span></h1>
+        <p>Make snack time more exciting with Mova Crunch. Discover our range of delicious vegetable snacks, made for those moments when you want something crunchy and full of flavour.</p>
+        <div class="actions">
+          <a class="btn" href="#products">Explore Products</a>
+          <a class="btn alt" href="https://wa.me/919008108866?text=Hello%20Mova%20Crunch%2C%20please%20share%20product%20details." target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-logo"><img src="assets/mova-crunch-logo.png" alt="Mova Crunch — brand logo"></div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Crunch time</span>
+        <h2>Our Snack Range</h2>
+        <p>Explore the Mova Crunch vegetable snack range. Get in touch to know about available varieties, pack sizes and orders.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><div class="product-art" aria-hidden="true">🥬</div><h3>Vegetable Chips</h3><p>A colourful, crunchy snack range for everyday munching and sharing.</p></article>
+        <article class="card"><div class="product-art" aria-hidden="true">🥒</div><h3>Bhindi Chips</h3><p>Enjoy the distinctive crunch of our bhindi (okra) snack variety.</p></article>
+        <article class="card"><div class="product-art" aria-hidden="true">🥕</div><h3>More Crunchy Snacks</h3><p>Ask us about more Mova Crunch snack varieties and current availability.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div class="about-mark"><img src="assets/mova-crunch-logo.png" alt="Mova Crunch logo"></div>
+      <div class="about-copy">
+        <span class="eyebrow">About our brand</span>
+        <h2>A little crunch. A lot of joy.</h2>
+        <p>Mova Crunch is a vegetable snacks brand bringing exciting crunch to your snack moments. We’re here to make it easy for customers and business partners to discover our products and connect with us.</p>
+        <p>For product details, bulk enquiries or business opportunities, contact our team directly.</p>
+        <div class="values"><span>Big on crunch</span><span>Made for snack time</span><span>Easy to connect</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="wrap">
+      <h2>Ready for a crunchy break?</h2>
+      <p>Want to know more about Mova Crunch products or place an enquiry? We’d love to hear from you.</p>
+      <a class="btn" href="https://wa.me/919008108866?text=Hello%20Mova%20Crunch%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener">Contact Us on WhatsApp</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Get in touch</span><h2>Let’s Connect</h2><p>For product enquiries, orders and business opportunities, contact Mova Crunch.</p></div>
+      <div class="contact-grid">
+        <div class="contact-card"><h3>Contact Details</h3>
+          <p><strong>Phone / WhatsApp</strong><br><a href="tel:+919008108866">+91 90081 08866</a><br><a href="tel:+919945187044">+91 99451 87044</a></p>
+          <p><strong>Address</strong><br>No. 45, 2nd Cross, R R Layout, Near Vaishnavi Store, Vijinapura, Dooravaninagar Post, Bengaluru – 560016, Karnataka, India</p>
+        </div>
+        <div class="contact-card"><h3>Send an Enquiry</h3><p>Message us on WhatsApp for product information, pricing, availability or bulk enquiries.</p>
+          <a class="btn" href="https://wa.me/919008108866?text=Hello%20Mova%20Crunch%2C%20I%20have%20an%20enquiry." target="_blank" rel="noopener">Message Mova Crunch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap foot"><strong>MOVA CRUNCH</strong><small>© 2026 Mova Crunch. All rights reserved.</small><small>Big Crunch. Bold Taste.</small></div></footer>
+</body>
+</html>
